@@ -2,7 +2,7 @@
 # RAISE THE TERRAIN
 ## About
 
-Create a rotatable 3D grid from an input file using C programming language and the C graphics library SDL2.
+Create a rotable 3D grid from an input file using C programming language and the C graphics library SDL2.
 
 ## SDL2
 In order to use the project, you need to install SDL2.
@@ -46,7 +46,8 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c -lm $(sdl2-config --cflags --libs) -o 
 ```
 $ ./rtc file
 ```
-![Isometric projection](https://ibb.co/v4M3c72)
+![Isometric projection](https://i.ibb.co/nzD6QVh/raise.png)
+
  4. Exit
  Press "Esc"
 
