@@ -9,19 +9,6 @@ In order to use the project, you need to install SDL2.
  - On Mac OS X, run `brew install sdl2`
  - If you need SDL2 for another platform, please visit [SDL installation guide](https://wiki.libsdl.org/Installation), along with [SDL2_ttf](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html).
 
-Compile your sources with:
-
-```
-`sdl2-config --cflags`
-```
-and link your compiled sources with:
-
-```
-`sdl2-config --libs`
-```
-
-You must include the backticks (`)!
-
 ## How it works
 
  - The program reads the input file which contains the altitude coordinates.
@@ -40,11 +27,11 @@ $ git clone https://github.com/huy75/Raise_the_terrain
  2. Compile the C files
  ```
 $ cd Raise_the_terrain
-$ gcc -Wall -Werror -Wextra -pedantic *.c -lm $(sdl2-config --cflags --libs) -o rtc
+$ gcc -Wall -Werror -Wextra -pedantic *.c -lm $(sdl2-config --cflags --libs) -o rtt
 ```
  3. Run the executable file with the provided input file. You could also use another input file. Reminder: the input file contains the altitude coordinates
 ```
-$ ./rtc file
+$ ./rtt file
 ```
 ![Isometric projection](https://i.ibb.co/nzD6QVh/raise.png)
 

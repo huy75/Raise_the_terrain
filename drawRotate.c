@@ -38,7 +38,7 @@ void draw_grid(SDL_Instance *instance)
 	float Cx, Cy;
 
 	Cx = SCREEN_WIDTH / 2.2;
-	Cy = SCREEN_HEIGHT / 3.2;
+	Cy = SCREEN_HEIGHT / 4.2;
 	for (i = 0; i < instance->row; i++)
 	{
 	    for (j = 0; j < instance->col; j++)
@@ -94,8 +94,8 @@ void rotate_grid(SDL_Instance *instance, int Angle)
 	    axis = 1, a = -1 * M_PI / 180;
 	else /* Axis = 0 */
 	    a = Angle * M_PI / 180;
-	Cx = SCREEN_WIDTH / 10;
-	Cy = SCREEN_HEIGHT / 7;
+	Cx = SCREEN_WIDTH / 4;
+	Cy = SCREEN_HEIGHT / 3;
 
 	for (i = 0; i < instance->row; i++)
 	    for (j = 0; j < instance->col; j++)

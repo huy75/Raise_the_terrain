@@ -24,7 +24,7 @@ void data_to_array(SDL_Instance *instance)
 		for (j = 0; token; j++)
 		{
 			instance->array[i][j].x = (SCREEN_WIDTH / (instance->col + 8)) * (i + 1);
-			instance->array[i][j].y = (SCREEN_HEIGHT / (instance->row + 3)) * (j + 1);
+			instance->array[i][j].y = (SCREEN_HEIGHT / (instance->row + 2)) * (j + 1);
 			instance->array[i][j].z = atof(token);
 			token = strtok(NULL, " \n");
 		}
